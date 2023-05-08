@@ -48,7 +48,12 @@ This utility will walk you through creating the following files with sensible de
   - Dockerfile
   - docker-compose.yaml
 
-#
+
+## Install the Dependencies
+
+```
+ npm install
+```
  
  ## Running the container service
  
