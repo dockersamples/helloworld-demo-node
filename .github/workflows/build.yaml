@@ -19,7 +19,7 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
         with:
-          version: "hellonodejs:1.0"
+          version: "lab:latest"
           driver: cloud
           endpoint: "ajeetraina/default"
           install: true
