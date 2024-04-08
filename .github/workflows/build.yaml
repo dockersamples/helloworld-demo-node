@@ -20,7 +20,8 @@ jobs:
         uses: docker/setup-buildx-action@v3
         with:
           version: "lab:latest"
-          driver: cloud
+          #driver: cloud
+          driver: docker-container
           endpoint: "tpneal/default"
           install: true
       - name: Build and push
