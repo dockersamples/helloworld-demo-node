@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: node-hello-world
+  name: node-hello-world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-hello-world
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: node-hello-world
+    spec:
+      containers:
+      - image: tpneal/hellonodejs:latest
+        name: node-hello-world
+        securityContext:
+          seccompProfile:
+            type: RuntimeDefault
+          privileged: false
+          readOnlyRootFilesystem: false
+          allowPrivilegeEscalation: false
+          runAsNonRoot: true
+          capabilities:
+            drop:
+            - ALL
+        resources: {}
+status: {}
+
