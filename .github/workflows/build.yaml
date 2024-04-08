@@ -21,8 +21,8 @@ jobs:
         with:
           version: "lab:latest"
           #driver: cloud
-          driver: docker-container
-          endpoint: "tpneal/default"
+          #driver: docker-container
+          #endpoint: "tpneal/default"
           install: true
       - name: Build and push
         uses: docker/build-push-action@v5
