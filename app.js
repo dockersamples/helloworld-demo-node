@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
   \\____\\_______/
 
 
-Hello from Tom in Docker image!
+Hello from Tom in Docker image on Tuesday 4/9 @ 1:27pm
 `);
   res.end();
 });
